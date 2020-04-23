@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udacity-proj-2-gjk2
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: sdfghjklwertyuicvbncvbn
+  POSTGRESS_DB: proj2db
+  POSTGRESS_HOST: udacity-proj-db.cmf6ywc9xh65.us-west-2.rds.amazonaws.com
+  URL: http://uda-eks-proj-ui.gaojunkai.com:8081
+metadata:
+  name: env-config
+  

@@ -21,7 +21,7 @@ services:
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: "http://localhost:8081"
   backend-feed:
     image: gjk0090/udacity-restapi-feed
     volumes:
@@ -35,8 +35,8 @@ services:
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
-      URL: "http://localhost:8100"
+      URL: "http://localhost:8081"
   frontend:
     image: gjk0090/udacity-frontend:local
     ports:
-      - "8100:80"
+      - "8081:80"
